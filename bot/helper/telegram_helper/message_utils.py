@@ -212,13 +212,15 @@ def bot_sys_stats():
     recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
     sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
     stats = f"""
-BOT UPTIME 🕐 : {currentTime}
-CPU : {progress_bar(cpu)} {cpu}%
-RAM : {progress_bar(mem)} {mem}%
-DISK : {progress_bar(disk)} {disk}%
-TOTAL : {total}
-USED : {used} || FREE : {free}
-SENT : {sent} || RECV : {recv}
+🔹𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴 🕐 : {currentTime}
+🔸𝙲𝙿𝚄 : {progress_bar(cpu)} {cpu}%
+🔹𝚁𝙰𝙼  : {progress_bar(mem)} {mem}%
+🔸𝙳𝙸𝚂𝙺 : {progress_bar(disk)} {disk}%
+🔹𝚃𝙾𝚃𝙰𝙻 : {total}
+🔸𝚄𝚂𝙴𝙳 : {used} || FREE : {free}
+🔹𝚂𝙴𝙽𝚃 : {sent} || RECV : {recv}
+
+⚡𝙿𝚘𝚠𝚍𝚎𝚛𝚎𝚍 𝙱𝚢 @AB_KAIUM⚡
 """
     return stats
 
